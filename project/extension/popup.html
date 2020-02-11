@@ -5,13 +5,20 @@
     <title>Phishing Detector</title>
     <script src="popup.js"></script>
   </head>
-  <body style="width:400px;height:150px">
+  <body style="width:400px;height:250px">
     <div class="container">
     <h4>Phishing Detector</h4>
     <p style="color:rgb(0, 110, 255)" id="url"></p>
     <p style="color:red" id="danger"></p>
     <p style="color:green" id="safe"></p>
     <button class="btn btn-primary" id="checkPage">Verify URL</button>
+    <hr>
+    <div class="input-group">
+        <input type="text" id="urlInput" class="form-control" placeholder="Enter URL...">
+        <span class="input-group-btn">
+            <button id="customUrl" class="btn btn-default" type="button">Verify</button>
+          </span>
+      </div>
     </div>
   </body>
 </html>
